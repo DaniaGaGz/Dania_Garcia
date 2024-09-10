@@ -32,15 +32,17 @@ def checkCave(chosenCave):
         print('Gives you his treasure!')
         print('''Do you want to know what would've happened if you chose the other? (yes or no)''')
         choice = input(str())
-        if choice == 'yes':
-            print('Gobbles you down in one bite!')
-        
+        if choice == 'yes' or choice == 'y':
+            print('''You chose right! He could've Gobbled you down in one bite!''')
+
+               
     else:
         print('Gobbles you down in one bite!')
         print('''Do you want to know what would've happened if you chose the other? (yes or no)''')
         choice = input(str())
-        if choice == 'yes':
-            print('Gives you his treasure!')
+        if choice == 'yes' or choice == 'y':
+            print('The other Dragon would have given you his treasure!')
+
             
         
         
