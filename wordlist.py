@@ -1,11 +1,12 @@
 import random
 # List of words to choose from
-input('guess my word: ')
+
 # Initialize the user's guess
-user_guess = ""
+word_list = ['python', 'java', 'javascript', 'ruby', 'html', 'css']
 
 while True:
-    word_list = ['python', 'java', 'javascript', 'ruby', 'html', 'css']
+
+    user_guess = input('guess my word: ')
     # Randomly select a word from the list
     selected_word = random.choice(word_list)
     print(selected_word)
@@ -14,8 +15,11 @@ while True:
         print('thank you for playing')
         break 
 
-    if selected_word == word_list:
-        print('youve guessed it!') 
+    if (user_guess == selected_word):
+        print('''you've guessed it!''') 
+        break
         
+    else: 
+        print('''you've got it wrong''')
     
     
