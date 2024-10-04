@@ -1,4 +1,4 @@
-#Homogeneous list
+""" #Homogeneous list
 integers = [1,2,3,4,5]
 
 animals = ["dog","cat","goat"]
@@ -117,3 +117,36 @@ nomen = ["Sam", "pelon","Dania"]
 #append siempre añade al final
 nomen.append("GILBERT")
 print (nomen)
+ """
+#sabradios
+list_of_square_roots = []
+for item in range(1,10):
+    square = item**2
+    list_of_square_roots.append(square)
+print(list_of_square_roots)
+
+#sabradios pero en reducido
+    #La sintaxis de LIST COMPREHENSION (sustitución de for loop) es [*EXPRESSION* for *ITEM* in *LIST* if *CONDITION*]
+#[expression for item in list if condition]
+    #espression es lo que quiero hacer
+    #el for es a fuerzas pq es la sustitución del for loop 
+    #no todos los for loops pueden ser sustituidos por list comprehension
+
+
+squared2 = [item**2 for item in range(1,10)]
+print(squared2)
+
+
+numbersequence = [1,2,3,4,5,6,7,8,9]
+
+for num in numbersequence:
+    
+    print(num**3)
+
+#1. Double the numbers in numbersequence
+ddoouubblleedd = [2*num for num in numbersequence]
+print(ddoouubblleedd)
+#2. filtering the list to include and double only even numbers
+filtered = [2*num for num in numbersequence if num%2 == 0]
+print(filtered)
+#3 combining list comprehensions with conditions
