@@ -77,7 +77,7 @@ def menu():
         
         choice = input("Enter your choice: ")
 
-        display_students()
+        
         if choice == "1":
             add_student()
         elif choice == "2":
@@ -92,8 +92,3 @@ def menu():
 
 # Start the program
 menu()
-display_students()
-add_student()
-remove_student()
-pop_student()
-update_student()

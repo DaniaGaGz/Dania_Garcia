@@ -13,10 +13,10 @@ while True:
         choice("goodbye")
         break
     if userch.isnumeric() and userch.isdigit():
-        userch = int(userch) -1
-        if userch not in range(1,3):
-            choice('not allowed. not in options')
-            continue
+        userch = int(userch)-1
+    if userch not in range(0,3):
+        choice('not allowed. not in options')
+        continue
     #if userch not in options:
         #choice('not allowed. not in options')
         #continue

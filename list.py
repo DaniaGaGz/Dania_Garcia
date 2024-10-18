@@ -1,4 +1,4 @@
-""" #Homogeneous list
+#Homogeneous list
 integers = [1,2,3,4,5]
 
 animals = ["dog","cat","goat"]
@@ -117,7 +117,7 @@ nomen = ["Sam", "pelon","Dania"]
 #append siempre añade al final
 nomen.append("GILBERT")
 print (nomen)
- """
+ 
 #sabradios
 list_of_square_roots = []
 for item in range(1,10):
