@@ -25,12 +25,11 @@ def display_students():
 
 
 # Add a new student to the list
-def add_student():
+def add_student(fname, lname):
     #TODO HINT: Ask the user for the student's name.
-    
+    fullname = fname + " " + lname
     #TODO Append the student's name to the 'students' list
-    namey = input("Add a name: ")
-    nombres.append(namey)
+    nombres.append(fullname)
     #TODO display the updated list
     display_students()
     #! After complete the function remove 'pass'
@@ -98,7 +97,9 @@ def menu():
         #TODO depending of the user choice option (1 - 5), call the correct function
         display_students()
         if choice == "1":
-            add_student()
+            firstName = input("First name")
+            LastName = input("last NAme")
+            add_student(firstName, LastName)
         elif choice == "2":
             remove_student()
         elif choice == "3":
@@ -111,10 +112,5 @@ def menu():
 
 # Start the program
 menu()
-display_students()
-add_student()
-remove_student()
-pop_student()
-update_student()
 
 #menu()
