@@ -10,15 +10,23 @@ def load_contacts(filename):
             LastName = row[1]
             phone_number = row[2]
             email = row[3]
-            contacts[LastName] = [first_name, phone_number, email]
+            contacts[LastName] = [first_name+ ' ' + LastName, phone_number, email]
     return contacts 
 
 def display_contact_input(contactinfo):
     if contactinfo:
-        print('\nContact Information:')
-        print(f'First Name: {contactinfo[0]}')
+        new_func(contactinfo)
+        
         print(f'Phone Number: {contactinfo[1]}')
         print(f'Email: {contactinfo[2]}')
+        
+    else:
+        print('No user found')
+    main()
+
+def new_func(contactinfo):
+    print('\nContact Information:')
+    print(f'First Name: {contactinfo[0]}')
 
 def main():
     filename = 'diccsv.csv'
@@ -26,5 +34,5 @@ def main():
     lastname = input('Please enter a last name you want to look up: ').strip() #.strip is used to delete any unwanted spaces
     contactinfo = contacts.get(lastname)
     display_contact_input(contactinfo)
-
-main()
+if __name__ == '__main__':
+    main()
